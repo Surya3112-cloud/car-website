@@ -1,0 +1,19 @@
+pipeline {
+    agent any
+
+    stages {
+
+        stage('Clone Repo') {
+            steps {
+                git 'https://github.com/Surya3112-cloud/car-website.git'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                echo "Build Successful"
+            }
+        }
+
+    }
+}
