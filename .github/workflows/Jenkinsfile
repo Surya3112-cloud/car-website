@@ -3,7 +3,7 @@ pipeline {
 
     stages {
 
-        stage('Clone Repo') {
+        stage('Clone Repository') {
             steps {
                 git 'https://github.com/Surya3112-cloud/car-website.git'
             }
@@ -11,7 +11,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                echo "Build Successful"
+                echo "Car Website Pipeline Running"
             }
         }
 
